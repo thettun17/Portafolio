@@ -1,0 +1,219 @@
+body {
+  font-family:Myanmar3,Yunghkio;
+}
+hr {
+  border: 1px dotted #793862;
+}
+p {
+  line-height: 2.5em;
+  font-size: 1em;
+}
+h2 {
+  color: #793862;
+  text-align: center;
+}
+/*============== Side Bar ================*/
+.mini-submenu{
+  display:none;  
+  background-color: rgb(222, 216, 216);  
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 9px;  
+  position: relative;
+  width: 42px;
+  top: 20px;
+}
+.row {
+  margin: 0px !important;
+}
+.mini-submenu:hover{
+  cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin-top: 3px;
+}
+
+.mini-submenu .icon-bar {
+  background-color: #000;
+}
+#slide-submenu{
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block; /* inline-block */
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.list-group {
+  width: 300px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+/*========= /Side Bar ==========*/
+/*========= Nav Bar =============*/
+nav ,
+.nav-items {
+  display: flex;
+}
+nav {
+  position: fixed !important;
+  padding: 0 50px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 999;
+  transition: 0.2s padding;
+  background: #e3effb !important;
+  border-bottom: 1px solid #b9c9ca;
+}
+.heading-title {
+  margin-bottom: 50px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+nav .logo {
+  cursor: pointer;
+  color: #3acec2;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: normal;
+}
+nav .nav-items {
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.nav-items li {
+  align-self: center;
+  padding-left: 20px;
+  /* margin-left: 20px;*/
+}
+
+.nav-items li a {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  position: relative;
+  color: #3acec2;
+}
+.nav-items {
+  padding-left: 0px;
+}
+.nav-items li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff1919;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.nav-items li a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+/*=========== END Nav Bar =============*/
+
+/*==================== Section =============*/
+section {
+  padding-top: 47px;
+  display: flex;
+  flex-direction: row;
+}
+.topic {
+  position: fixed;
+  left: -15px;
+}
+.content {
+  text-align: justify;
+  padding: 10px 20px;
+  width: 75%;
+  margin-left: auto;
+}
+/*=============== /Section =================*/
+/*=============== Drop Down =================*/
+.sub {
+  padding-left: 0px !important;
+  position: absolute;
+  display: none;
+  top: 49px;
+  right: 12px;
+  background: #2d2b2be0;
+  border-radius: 3px;
+}
+.sub li {
+  list-style-type: none;
+  border-bottom: 1px solid #a59b9b;
+  padding: 4px;
+  margin: 11px;
+}
+.sub li:last-child {
+  border-bottom: none;
+}
+.sub li:hover a {
+  color: #dc4444ed;
+}
+/*========== /Drop Down ===============*/
+
+/*========== Media Query ===============*/
+@media (max-width: 769px) {
+  .content {
+    width: 93%;
+  }
+  nav {
+    padding-right: 0px !important;
+    padding-left: 2px !important;
+    z-index: 0;
+    height: 50px;
+  }
+  nav .logo {
+    display: none;
+  }
+  .mini-submenu {
+    z-index: 2;
+    top: -27px;
+    display: inline-block;
+  }
+  .list-group {
+    width: 174px;
+    display: none;
+    position: absolute;
+    top: -33px;
+  }
+  section {
+    padding-top: 33px;
+  }
+  #slide-submenu {
+    background: none !important;
+    padding: 0px !important;
+    border-radius: 0px !important;
+    display: inline-block;
+  }
+  .sub {
+    top: 50px;
+  }
+  .sub li:first-child {
+    padding: 4px;
+    margin: 11px;
+  }
+  .nav-items {
+    padding-left: 136px;
+  }
+}
+

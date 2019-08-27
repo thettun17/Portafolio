@@ -1,0 +1,104 @@
+@media (min-width: 769px) {
+	.main-header,
+	.nav, .overlay {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.banner {
+		height: 300px;
+		padding-top: 120px;
+		font-size: 1.5em;
+	}
+	.main-section {
+		width: 90%;
+	}
+	/*========== CONTAINER DESKTOP SIZE ===============*/
+	.photo {
+		min-height: 100%;
+	}
+	.col {
+		position: relative;
+		overflow: hidden;
+		margin: 20px 10px;
+		width: 30%;
+		height: 250px;
+	}
+	.overlay {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background: #143c5a;
+		color: white;
+	}
+	.btn {
+		font-size: 1em;
+		padding: 8px 30px;
+		margin-top: auto;
+	}
+	.overlay h3 {
+		margin-top: 0px;
+		font-weight: bold;
+		font-size: 10px;
+		text-align: center;
+	}
+	.overlay p {
+		display: block;
+		text-align: center;
+		padding: 0 20px;
+		text-align: justify;
+	}
+	/*================ Translation ==============*/
+	.col img,
+	.col .overlay {
+		transition: transform .6s ease-out;
+	}
+	.col .overlay {
+		transform: translateX(-100%);
+	}
+
+	.col:hover .overlay {
+		transform: translateX(0);
+	}
+
+	.col:hover img {
+		transform: translateX(100%);
+	}
+
+	.btn:hover {
+		background: initial;
+		border: 2px solid #1b3eaa;
+	}
+}
+@media (min-width: 1025px) {
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.banner {
+		margin-top: 0;
+		height: 400px;
+		padding-top: 150px;
+		font-size: 2.5em;
+	}
+	.overlay h3 {
+		color: #1bfced;
+		font-weight: bold;
+		font-size: 2em;
+		text-align: center;
+		border-bottom: 1px solid #f27b7b;
+	}
+	.btn {
+		font-weight: bold;
+		color: white;
+		background: #1b3eaa;
+		font-size: 1.2em;
+		padding: 10px 35px;
+		margin-top: auto;
+		margin-bottom: 5px;
+	}
+}
