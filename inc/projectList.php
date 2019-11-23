@@ -37,18 +37,87 @@
 					<a href="../course/index.php" class="btn btn-outline-info btn-md ">Course Detail</a>
 				</div>
 			</div><!-- /Course Overview -->
+
 			<!-- Project List -->
 			<div class="col-md-5 ml-auto">
 				<h4 class="mb-4 text-center">Projects List</h4>
-					<ul class="list-group">
-						<li class="list-group-item list-group-item-info"><strong>Mongo DB</strong>: Nos SQLdatabase</li>
-						<li class="list-group-item list-group-item-info"><strong>Express</strong>: Framework for Node</li>
-						<li class="list-group-item list-group-item-info"><strong>React</strong>: JavaScript Libary</li>
-						<li class="list-group-item list-group-item-info"><strong>Node.js</strong>: JavaScript environment</li>
-						<li class="list-group-item list-group-item-info"><strong>Bable</strong>: JavaScript Compiler</li>
-					</ul>
-				</div><!-- /Project List -->
-			</div>
+				<ul class="list-group">
+					<div class="collapsible-header list-group-item list-group-item-info">Laundry Management System</div>
+					<div class="collapsible-body">
+						<p>
+							In this Project, I used LaravelFramework, MySQL database, bootstrap and CSS. This is the one of online Laundry System and can reduce our time. We can easily order and recieve.
+						</p>
+						<hr>
+						<a href="http://laundry.zwelab.com/" target="_blank" class="btn btn-outline-info btn-md">View Demo</a>
+					</div>
+
+					<div class="collapsible-header list-group-item list-group-item-info">Time Tracker</div>
+					<div class="collapsible-body">
+						<p>
+							In this Project, I used Core-PHP, PHP OOP, MySQL database and CSS.
+							By writing this project, i clearly understand the concept of PHP OOP.
+						</p>
+						<hr>
+						<a href="" class="btn btn-outline-info btn-md">View Demo</a>
+					</div>
+
+					<div class="collapsible-header list-group-item list-group-item-info">Media Library</div>
+					<div class="collapsible-body">
+						<p>
+							In this Project I used Pure-PHP, MySQL database, CSS, Symphony package and PHP-Mailer. When I develop this project, I got the idea how to combine with other package in our Pure-PHP project.
+						</p>
+						<hr>
+						<a href="" class="btn btn-outline-info btn-md">View Demo</a>
+					</div>
+
+					<div class="collapsible-header list-group-item list-group-item-info">Book Voting</div>
+					<div class="collapsible-body end-b">
+						<p>
+							In this Project I used PHP, MySQL database and CSS. By developing this project i got new experience how to use session and cookie in our porject and the diference of authorization and  authenication.
+						</p>
+						<hr>
+						<a href="" class="btn btn-outline-info btn-md">View Demo</a>
+					</div>
+
+					<div class="collapsible-header list-group-item list-group-item-info">Full Staff Conf</div>
+					<div class="collapsible-body">
+						<p>
+							I developed this project by using HTML, CSS and bootstrap. This is the static web page and i understanded the usage of bootstrap when i develope this page.
+						</p>
+						<hr>
+						<a href="" class="btn btn-outline-info btn-md">View Demo</a>
+					</div>
+
+					<div class="collapsible-header list-group-item list-group-item-info">Lake Tahoe</div>
+					<div class="collapsible-body end-b">
+						<p>
+							This is the static web page and I used HTML, CSS and Media Query. When i developed this web page, I clearly understand box model, how to use typograpicy, CSS Fandamental concept and the theory related with forn-end developer.
+						</p>
+						<hr>
+						<a href="" class="btn btn-outline-info btn-md">View Demo</a>
+					</div>
+
+					<div class="collapsible-header list-group-item list-group-item-info">Best City Guide</div>
+					<div class="collapsible-body end-b">
+						<p>
+							This is the static web page and I used HTML, CSS Flexbox and Media Query. When i developed this web page, I got the useage of flexbox and the benifit of using flexbox.
+						</p>
+						<hr>
+						<a href="" class="btn btn-outline-info btn-md">View Demo</a>
+					</div>
+
+					<div class="collapsible-header list-group-item list-group-item-info">ToDoList</div>
+					<div class="collapsible-body end-b">
+						<p>
+							This is the example of how to use the javascritp DOM.
+						</p>
+						<hr>
+						<a href="" class="btn btn-outline-info btn-md ">View Demo</a>
+					</div>
+
+				</ul>
+			</div><!-- /Project List -->
 		</div>
 	</div>
+</div>
 <!--/ ProjectList and Course Overview -->

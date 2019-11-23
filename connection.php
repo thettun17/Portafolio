@@ -18,7 +18,7 @@ $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 echo 'Error connecting to the Database: '.$e->getMessage();
 exit;
 }*/
-$config = array('username' => 'thuzar', 'password' => '6125');
+$config = array('username' => 'phoo', 'password' => '6125');
 try {
 	$conn = new PDO('mysql:host=localhost; dbname=elearning', $config['username'], $config['password']);
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

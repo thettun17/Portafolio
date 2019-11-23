@@ -65,6 +65,7 @@ $route = $_SERVER['PHP_SELF'];
 </footer>
 
 <!-- Script -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script type="text/javascript" src="../js/app.js"></script>
 </body>
 </html>
